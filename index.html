@@ -1,105 +1,111 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap");
+      $blue-02: #999cb0;
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+      * {
+        box-sizing: border-box;
+      }
 
+      body {
+        margin: 0 !important;
+        font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+          "Droid Sans", "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: $blue-02;
+      }
 
+      .column {
+        float: left;
+        height: 1000px;
+      }
 
-  
-  <style>@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap");
+      .left {
+        width: 10%;
+      }
 
-$blue-02: #999cb0;
+      .right {
+        width: 90%;
+      }
 
-* {
-  box-sizing: border-box;
-}
+      .light-orange {
+        background-color: rgb(252, 242, 216);
+      }
 
-body {
-  margin: 0 !important;
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $blue-02;
-}
+      .dark-orange {
+        background-color: rgb(255, 160, 16);
+      }
 
-.column {
-  float: left;
-  height: 1000px;
-}
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-.left {
-  width: 10%;
-}
+      li {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        color: #161d4b;
+        margin-bottom: 10px;
+      }
 
-.right {
-  width: 90%;
-}
+      .nav {
+        list-style-type: none;
+        margin-left: 10px;
+      }
 
-.light-orange {
-  background-color: rgb(252, 242, 216);
-}
+      a {
+          color: #161d4b;
+          font-weight: bold;
+          font-size: inherit;
+          text-decoration: none;
+      }
 
-.dark-orange {
-  background-color: rgb(255, 160, 16);
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-li {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #161d4b;
-  margin-bottom: 10px;
-}
-
-.nav {
-  list-style-type: none;
-  margin-left: 10px;
-}
-
-a {
-    color: #161d4b;
-    font-weight: bold;
-    font-size: inherit;
-    text-decoration: none;
-}
-
-h1 {
-  margin-left: 20px;
-}</style>
-  <title>ECE 4950 Group 3</title>
-
-  
-
-
-</head><body>
-<div class="row">
-<div class="column left dark-orange">
-
-
-
-
-
-<div class="nav"><li style="margin-top: 70px;"><a href="column.html">About
-us</a></li>
-<li><a href="project_1.pdf">Report 1</a></li>
-<li><a href="Financial%20Scenario.pdf">Financial Scenario</a></li>
-<li><a href="project_2.pdf">Report 2</a></li>
-</div>
-</div>
-<div class="column right light-orange">
-<h1>ECE 4950 Group 3</h1>
-</div>
-</div>
-
-</body></html>
+      h1 {
+        margin-left: 20px;
+      }
+    </style>
+    <title>ECE 4950 Group 3</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column left dark-orange">
+        <div class="nav">
+          <li style="margin-top: 70px;">
+            <a href="column.html">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="project_1.pdf">
+              Report 1
+            </a>
+          </li>
+          <li>
+            <a href="Financial%20Scenario.pdf">
+              Financial Scenario
+            </a>
+          </li>
+          <li>
+            <a href="project_2.pdf">
+              Report 2
+            </a>
+          </li>
+        </div>
+      </div>
+      <div class="column right light-orange">
+        <h1>
+          ECE 4950 Group 3
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
