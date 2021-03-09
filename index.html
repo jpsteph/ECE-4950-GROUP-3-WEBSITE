@@ -6,7 +6,6 @@
     <style>
       @import url("https://fonts.googleapis.com/css?family=Roboto");
       @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap");
-      $blue-02: #999cb0;
 
       * {
         box-sizing: border-box;
@@ -18,20 +17,22 @@
           "Droid Sans", "Helvetica Neue", sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: $blue-02;
+        color: #161d4b;
       }
 
       .column {
         float: left;
-        height: 1000px;
+        height: 100vh;
       }
 
       .left {
-        width: 10%;
+        width: 200px;
+        /* flex-grow: 1; */
       }
 
       .right {
-        width: 90%;
+        width: fit-content;
+        flex-grow: 1;
       }
 
       .light-orange {
@@ -43,10 +44,15 @@
       }
 
       /* Clear floats after the columns */
-      .row:after {
+      /* .row:after {
         content: "";
         display: table;
         clear: both;
+      } */
+
+      .row {
+        display: flex;
+        flex-direction: row;
       }
 
       li {
@@ -81,31 +87,21 @@
       <div class="column left dark-orange">
         <div class="nav">
           <li style="margin-top: 70px;">
-            <a href="column.html">
-              About us
-            </a>
+            <a href="column.html">About us</a>
           </li>
           <li>
-            <a href="project_1.pdf">
-              Report 1
-            </a>
+            <a href="project_1.pdf">Report 1</a>
           </li>
           <li>
-            <a href="Financial%20Scenario.pdf">
-              Financial Scenario
-            </a>
+            <a href="Financial%20Scenario.pdf">Financial Scenario</a>
           </li>
           <li>
-            <a href="project_2.pdf">
-              Report 2
-            </a>
+            <a href="project_2.pdf">Report 2</a>
           </li>
         </div>
       </div>
       <div class="column right light-orange">
-        <h1>
-          ECE 4950 Group 3
-        </h1>
+        <h1>ECE 4950 Group 3</h1>
       </div>
     </div>
   </body>
